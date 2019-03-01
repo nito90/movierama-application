@@ -49,9 +49,12 @@ Opinions: Keeps user's opinion per movie with reference to the user and to the m
         primary key (id)
 ```
 
-For simplicity reasons we use in the project two user roles ROLE_USER, ROLE_ADMIN and two movie choices LIKE, HATE. Thus I didnt found the need to create extra tables in the database at the time of the implementation ( Possible feature ).
+For simplicity reasons we use in the project two user roles ROLE_USER, ROLE_ADMIN and two movie choices LIKE, HATE. Thus I didnt found the need to create extra tables in the database at the time of the implementation ( Possible feature ). The application's urls are ROLE PERMISSION BASED secured by Spring Security technology.
 
-The application's urls are ROLE PERMISSION BASED secured by Spring Security technology.
+Moreover there is data.sql file with some pre-inserted details to make the testing and the demo easier. The user's password in this file is encrypted. The decrypted password is:
+
+testuser2
+
 
 ## Installation server side with tests
 
@@ -89,4 +92,24 @@ npm run ris (this command will run a script which will reinstall as clean the pr
 http://localhost:3000
 ```
 
+Home Page for normal user. If you click in the name of each movie's creator username it will redirect you to login page to see his movies and his votes.
+![Home Page](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.30.23.png)
+
+Login Page:
+![Login Page](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.30.38.png)
+
+Sign Up page:
+![Sign up page](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.30.47.png)
+
+Home page for logged in user. If you click in the name of each movie's creator username it will show you all his movies and opinions and you can vote also.
+![Home page for logged in user](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.31.04.png)
+
+Choice to clear your vote and you can see what you have already voted.
+![Choice to clear your vote](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.31.21.png)
+
+Create a movie
+![Create a movie](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.31.21.png)
+
+User's profile
+![Show user's profile](https://github.com/nito90/movierama-application/blob/master/Screen%20Shot%202019-03-01%20at%2021.31.46.png)
 
